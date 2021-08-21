@@ -3,6 +3,9 @@
 </template>
 
 <style>
+
+        /* UTILITIES CSS */
+
 .container {
     margin: 0 auto;
     padding: 0 40px;
@@ -104,6 +107,10 @@
 .sm {
     font-size: 1rem;
 }
+    
+.sm-1 {
+    font-size: 1.5rem;
+}
 
 .md {
     font-size: 2rem;
@@ -161,6 +168,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3 {
@@ -266,6 +277,15 @@
     /*font-size: 14px;*/
 }
 
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --light-color: #f4f4f4;
+    --dark-color: #010616;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -300,18 +320,6 @@ img{
     display: flex;
 }
 
-.solution a{
-  font-size: 12px;
-  color:#34d015;
-  float: right;
-  font-weight: 500;
-}
-.solution a:hover{
-transform:scale(1.2) ;
-}
-.solution p{
-  padding:4%;
-}
 
 .navbar a{
 color: white;
@@ -326,127 +334,32 @@ margin: 0 3%;
     justify-content: space-between;
 }
 
-/*Showcase*/
-
-.showcase{
-  font-size: 18px;
-    background-color: #0c3b79;
-    color: #fff;
-    height: 400px;
-    position: relative;
-    margin-bottom: 13%
+.grid-3 .card {
+    margin: 0;
 }
 
-.showcase h1{
-    font-size: 35px;
+.stats .container .stats-heading {
+  color: #047aed;
+  font-weight: 700;
 }
 
-.showcase p{
-    margin: 20px 0;
+.stats .container .grid {
+  max-width: 900px;
 }
 
-.showcase .grid{
-    grid-template-columns: 55% 45%;
-    gap: 30px;
+.solution a{
+    font-size: 12px;
+    color:#34d015;
+    float: right;
+    font-weight: 500;
+}
+.solution a:hover{
+transform:scale(1.2) ;
+}
+.solution p{
+    padding:4%;
 }
 
-.showcase-form{
-    position: relative;
-    top: 60px;
-    height: 350px;
-    width: 400px;
-    padding: 40px;
-    z-index: 100;
-    
-}
-
-.showcase-form .form-control{
-    margin: 30px 0;
-}
-
-.showcase-form input[type="text"],
-.showcase-form input[type="email"]{
-    border: 0;
-    border-bottom: 1px solid #b4becb ;
-    padding: 3px;
-    width: 100%;
-    font-size: 16px;
-
-}
-.showcase-form input:focus{
-    outline: none;
-}
-
-.showcase::before,
-.showcase::after {
-    content: "";
-    position: absolute;
-    height: 100px;
-    bottom: -70px;
-    right: 0;
-    left: 0;
-    background-color: white;
-    
-}
-
-/*Utilities*/
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-
-
-.btn{
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: #0c3b79;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-
-}
-.btn-outline{
-    background-color: transparent;
-    border: 1px solid #fff;
-}
-
-.btn:hover{
-    transform: scale(0.98);
-}
-
-
-
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    overflow: visible;
-}
-.grid-1{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    overflow: visible;
-    color: #333;
-    margin-bottom: 3% ;
-}
 .grid-1 h3:hover{
     transform: scale(0.98);
     opacity: 1;
@@ -464,37 +377,17 @@ margin: 0 3%;
 
 
 
-@media(max-width: 950px){
+@media(max-width: 768px){
     .grid,
-    .grid-1,
     .showcase .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        
-    }
-    .showcase{
-        height: auto;
-    }
-    .showcase-text{
-        text-align: center;
-        margin-top: 40px;
-    }
-    .showcase-form{
-        justify-self: center ;
-        margin: auto;
-    }
-    .btn-outline{
-        margin-bottom: 10%;
     }
     .mack{
       font-size: 10px;
     }
    
 }
-
-
-
-
 
 @media(max-width: 500px) {
     .navbar{
@@ -507,104 +400,18 @@ margin: 0 3%;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
-    .showcase{
-        margin-bottom: 20%;
-    }
-    .social{
-    bottom: 0px;
-    z-index: 10;
-    display: inline-flex;
-    font-size: small;
-    margin: 0;
-}
-.btn-outline{
-    margin-bottom: 15%;
-}
 
-.card{
- background-color:white;
- border-radius: 10px;
- box-shadow: 0px 4px 10px gray;
- padding: 20px;
- margin: 10px;
- font-size: 14px;
- color: #333;
-}
-.adjust{
-    text-align: justify;
-}
-.adjust h1{
-    font-size: 18px;
-    font-weight: 900;
-    text-align: start;
-}
-.showcase-form{
-    position: relative;
-    top: 60px;
-    height: 350px;
-    width: 330px;
-    padding: 40px;
-    z-index: 100;
-    
-}
+    .adjust{
+        text-align: justify;
+    }
 
-}
-
-@keyframes slideInFromLeft{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes slideInFromRight{
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
+    .adjust h1{
+        font-size: 18px;
+        font-weight: 900;
+        text-align: start;
     }
 }
 
-@keyframes slideInFromTop{
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes slideInFromBottom{
-    0%{
-        transform: translateY(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
-.showcase-text{
-    animation: slideInFromLeft 0.9s ease-in-out;
-}
-
-.bg-dark{
-    background-color: #0c3b79;
-    color: #fff
-    ;
-}
-
-
-
-.showcase form textarea{
-    margin: auto;
-    width:100%;
-    height: 10vh;
-}
-
-.showcase-form textarea:focus{
-    outline: none;
-}
 
 footer{
     color: #494949;
@@ -632,9 +439,7 @@ footer .about_info_seg{
     float: right;
 }
 footer .footer_base p{
-font-size: 10px;
- margin:2% 7%;
-    padding: 2%;
+    font-size: 10px;    
 }
 
 footer h2{
@@ -647,7 +452,7 @@ footer p{
     
 }
 
-footer_link{
+.footer_link{
     margin: 0 40px;
 }
 
@@ -730,33 +535,6 @@ footer_link{
     z-index: 10;
 }
 
-.social{
-    bottom: 20px;
-    z-index: 10;
-    display: inline-flex;
-    font-size: small;
-}
-
-.social li{
-    list-style: none;
-}
-.social li a{
-    display: inline-block;
-    color: black;
-    margin-right: 20px;
-    transform: scale(0.5);
-    transition: 0.5s;
-  
-}
-.social img{
-    width: 70px;
-      border-radius:40%;
-      
-}
-.social li a:hover{
-    transform:scale(0.6) translateY(-15px) ;
-}
-
 
 /*Newsline*/
 .Newsline{
@@ -766,14 +544,6 @@ footer_link{
 }
 .Newsline h5{
  padding-left: 20px;
-}
-.card{
- background-color:white;
- border-radius: 10px;
- box-shadow: 3px 3px 3px gray;
- padding: 20px;
- margin: 10px;
- color: #333;
 }
 
 .card .side_page{
