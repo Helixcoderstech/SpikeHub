@@ -658,7 +658,7 @@ footer_link{
     font-weight: 600;
     margin: 0;
     padding: 0;
-    background-image: url('science.jpg');
+    background-image: url('/assets/imgs/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -685,7 +685,7 @@ footer_link{
     font-weight: 600;
     margin: 0;
     padding: 0;
-    background-image: url('entertain.jpg');
+    background-image: url('/assets/imgs/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -710,7 +710,7 @@ footer_link{
     font-weight: 600;
     margin: 0;
     padding: 0;
-    background-image: url('campus.jpg');
+    background-image: url('/assets/imgs/bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
