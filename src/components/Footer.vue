@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+.footer {
+  margin-top: 30px;  
+}
+
 .social {
   margin: 20px auto 0 auto;
   padding: 0 20px;

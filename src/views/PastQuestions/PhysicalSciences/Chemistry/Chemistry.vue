@@ -19,9 +19,9 @@
       </Card>
       <Card>
         <img src="@/assets/imgs/campus.jpg" alt="Education">
-        <a href="">
+        <router-link :to="{ name: 'OrganicChemistry' }">
           <h3>ORGANIC CHEMISTRY</h3>
-        </a>
+        </router-link>
       </Card>
       <Card>
         <img src="@/assets/imgs/image.jpg" alt="Education">

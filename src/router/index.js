@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue'
 import PastQuestions from '@/views/PastQuestions/PastQuestions.vue'
 import PhysicalSciences from '@/views/PastQuestions/PhysicalSciences/PhysicalSciences.vue'
 import Chemistry from '@/views/PastQuestions/PhysicalSciences/Chemistry/Chemistry.vue'
+import OrganicChemistry from '@/views/PastQuestions/PhysicalSciences/Chemistry/OrganicChemistry.vue'
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
     path: '/past-questions/physical-sciences/chemistry',
     name: 'Chemistry',
     component: Chemistry
+  },
+  {
+    path: '/past-questions/physical-sciences/organic-chemistry',
+    name: 'OrganicChemistry',
+    component: OrganicChemistry
   }
 ]
 
