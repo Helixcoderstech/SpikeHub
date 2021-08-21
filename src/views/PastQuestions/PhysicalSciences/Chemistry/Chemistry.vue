@@ -4,9 +4,9 @@
 <section class="stats">
   <div class="container">
     <h2 class="stats-heading text-center my-1">
-        <router-link :to="{ name: 'PastQuestions' }">Past Questions</router-link>
+        <router-link :to="{ name: 'PastQuestions' }">Past Questions </router-link>
         <i class="fas fa-angle-double-right"></i>
-        <router-link :to="{ name: 'PastQuestions' }">Physical Sciences</router-link>
+        <router-link :to="{ name: 'PastQuestions' }">Physical Sciences </router-link>
         <i class="fas fa-angle-double-right"></i>
         Chemistry
     </h2>
