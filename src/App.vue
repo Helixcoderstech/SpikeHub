@@ -338,6 +338,15 @@ margin: 0 3%;
     margin: 0;
 }
 
+.showcase-text{
+    animation: slideInFromLeft 0.9s ease-in-out;
+}
+
+.stats,
+.question-template {
+    animation: slideInFromBottom 1s ease-in;
+}
+
         /* STATS */
 
 .stats .container .stats-heading {
@@ -374,6 +383,7 @@ margin: 0 3%;
     color:#34d015;
     float: right;
     font-weight: 500;
+    transition: transform 0.5s ease-in-out;
 }
 .solution a:hover{
 transform:scale(1.2) ;
@@ -408,7 +418,12 @@ transform:scale(1.2) ;
     .question-template{
       font-size: 10px;
     }
-   
+    .showcase-text{
+        animation: slideInFromTop 1s ease-in;
+    }
+    .showcase-form{
+        animation: slideInFromBottom 1s ease-in;
+    }
 }
 
 @media(max-width: 500px) {

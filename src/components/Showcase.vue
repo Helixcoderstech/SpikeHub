@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 .showcase{
     margin: auto;
@@ -49,7 +49,7 @@ export default {
     width: 400px;
     padding: 40px;
     z-index: 100;
-    
+    animation: slideInFromRight 1s ease-in;
 }
 
 .showcase-form .form-control{
@@ -107,10 +107,12 @@ export default {
     .showcase-text{
         text-align: center;
         margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
     }
     .showcase-form{
         justify-self: center ;
         margin: auto;
+        animation: slideInFromBottom 1s ease-in;
     }
     .btn-outline{
         margin-bottom: 10%;
