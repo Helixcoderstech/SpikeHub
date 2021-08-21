@@ -32,7 +32,7 @@
         </a>
       </Card>
       <Card>
-        <img src="@/assets/imgs/entertain.jpg" alt="Education">
+        <img src="@/assets/imgs/logo.jpg" alt="Education">
         <a href="">
           <h3>CLINICAL SCIENCES</h3>
         </a>
