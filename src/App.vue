@@ -107,7 +107,7 @@
 .sm {
     font-size: 1rem;
 }
-    
+
 .sm-1 {
     font-size: 1.5rem;
 }
@@ -264,6 +264,69 @@
     padding: 4rem;
 }
 
+        /* ANIMATIONS */
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(2.0);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
 
         /* Specific CSS LINES */
 
@@ -336,10 +399,6 @@ margin: 0 3%;
 
 .grid-3 .card {
     margin: 0;
-}
-
-.showcase-text{
-    animation: slideInFromLeft 0.9s ease-in-out;
 }
 
 .stats,
@@ -417,12 +476,6 @@ transform:scale(1.2) ;
     }
     .question-template{
       font-size: 10px;
-    }
-    .showcase-text{
-        animation: slideInFromTop 1s ease-in;
-    }
-    .showcase-form{
-        animation: slideInFromBottom 1s ease-in;
     }
 }
 
