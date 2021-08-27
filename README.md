@@ -1,0 +1,2 @@
+# Spike
+An educational platform
